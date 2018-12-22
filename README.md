@@ -1,2 +1,4 @@
 # HitMe
 A Good Internet Project
+
+Think back to the days of GeoCities, Live Journal, and hit counters on websites. Those were hilarious times. This thing is a website that just displays in HUGE numbers the total number of unique hits it has gotten, in real time. It also displays milestones in some visual form on the page that people are helping achieve. So, you have visitors to the site who are working in concert to achieve these milestones. “What are these milestones?” you ask. Well, they’re pretty random and I haven’t detailed them all yet but they will correspond to the numbers. For example, if the website hits 1776 total unique hits, every person that has visited helped to achieve the “Unlocked the United States of America” milestone. These milestones could also be related to science, units of measurements, politics, entertainment, money, etc…  This might be the dumbest of all these ideas just because of how pointless it is.
