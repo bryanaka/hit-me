@@ -62,3 +62,4 @@ function assert_program_exists {
     exit 1
   fi
 }
+
