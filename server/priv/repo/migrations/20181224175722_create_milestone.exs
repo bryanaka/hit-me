@@ -11,7 +11,7 @@ defmodule HitMe.Repo.Migrations.CreateMilestone do
       timestamps()
     end
 
-    create index(:milestone, [:code])
+    create unique_index(:milestone, [:code])
     create index(:milestone, [:hit_count])
   end
 end

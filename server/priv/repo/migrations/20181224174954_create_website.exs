@@ -10,6 +10,6 @@ defmodule HitMe.Repo.Migrations.CreateWebsite do
       timestamps()
     end
 
-    create index(:website, [:host])
+    create unique_index(:website, [:host])
   end
 end

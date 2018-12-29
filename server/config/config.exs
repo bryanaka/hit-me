@@ -14,7 +14,7 @@ config :hit_me,
 config :hit_me, HitMeWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "vv4iNWItOCnJYNT8NNG8sKt4pO8mOkCI2E/i72zwKwhy3cJYwXF5QUD4aLErwu1c",
-  render_errors: [view: HitMeWeb.ErrorView, accepts: ~w(json)],
+  render_errors: [view: HitMeWeb.ErrorView, accepts: ~w(json json-api)],
   pubsub: [name: HitMe.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
@@ -24,6 +24,11 @@ config :logger, :console,
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
+config :phoenix, :format_encoders, "json-api": Jason
+
+config :mime, :types, %{
+  "application/vnd.api+json" => ["json-api"]
+}
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
