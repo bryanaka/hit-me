@@ -3,7 +3,7 @@ defmodule HitMe.Page do
   import Ecto.Changeset
 
 
-  schema "page" do
+  schema "pages" do
     field :hit_count, :integer
     field :path, :string
     field :website_id, :id

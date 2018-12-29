@@ -1,8 +1,8 @@
-defmodule HitMe.Repo.Migrations.CreateWebsite do
+defmodule HitMe.Repo.Migrations.CreateWebsites do
   use Ecto.Migration
 
   def change do
-    create table(:website) do
+    create table(:websites) do
       add :name, :string
       add :host, :string
       add :token, :string
@@ -10,6 +10,6 @@ defmodule HitMe.Repo.Migrations.CreateWebsite do
       timestamps()
     end
 
-    create unique_index(:website, [:host])
+    create unique_index(:websites, [:host])
   end
 end

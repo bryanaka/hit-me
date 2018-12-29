@@ -9,5 +9,7 @@ defmodule HitMeWeb.Router do
 
   scope "/api", HitMeWeb do
     pipe_through :api
+
+    resources "/milestones", MilestoneController, only: [:index, :show]
   end
 end

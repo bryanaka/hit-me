@@ -1,4 +1,4 @@
-defmodule HitMeWeb.MilestonesView do
+defmodule HitMeWeb.MilestoneView do
   use HitMeWeb, :view
   use JaSerializer.PhoenixView
 

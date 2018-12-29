@@ -3,7 +3,7 @@ defmodule HitMe.Website do
   import Ecto.Changeset
 
 
-  schema "website" do
+  schema "websites" do
     field :host, :string
     field :name, :string
     field :token, :string

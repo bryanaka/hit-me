@@ -3,7 +3,7 @@ defmodule HitMe.Milestone do
   import Ecto.Changeset
 
 
-  schema "milestone" do
+  schema "milestones" do
     field :code, :string
     field :description, :string
     field :hit_count, :integer

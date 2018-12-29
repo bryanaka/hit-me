@@ -1,8 +1,8 @@
-defmodule HitMe.Repo.Migrations.CreateMilestone do
+defmodule HitMe.Repo.Migrations.CreateMilestones do
   use Ecto.Migration
 
   def change do
-    create table(:milestone) do
+    create table(:milestones) do
       add :hit_count, :integer
       add :code, :string
       add :name, :string
@@ -11,7 +11,7 @@ defmodule HitMe.Repo.Migrations.CreateMilestone do
       timestamps()
     end
 
-    create unique_index(:milestone, [:code])
-    create index(:milestone, [:hit_count])
+    create unique_index(:milestones, [:code])
+    create index(:milestones, [:hit_count])
   end
 end
