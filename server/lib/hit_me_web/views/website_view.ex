@@ -6,3 +6,5 @@ defmodule HitMeWeb.WebsiteView do
 
   has_many :pages, serializer: PageView
 end
+
+curl http://localhost:4000/api/milestones -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json"

@@ -11,5 +11,10 @@ defmodule HitMeWeb.Router do
     pipe_through :api
 
     resources "/milestones", MilestoneController, only: [:index, :show]
+
+    get "/pages/:id", PageController, :show
+    get "/websites/:id", WebsiteController, :show
+
+    post "/hit", HitController, :create
   end
 end
